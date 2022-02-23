@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   const dispacth = useDispatch()
-  const cash = useSelector(state => state.cash)
+  const cash = useSelector(state => state.cash.cash)
 
   const addCash = (cash) => {
     dispacth({type: "ADD_CASH", payload: cash})
